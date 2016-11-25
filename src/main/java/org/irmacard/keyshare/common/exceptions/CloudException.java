@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common.exceptions;
+package org.irmacard.keyshare.common.exceptions;
 
 /**
  * Exception occuring during usage of the API. Mainly a wrapper around an {@link ApiError}.

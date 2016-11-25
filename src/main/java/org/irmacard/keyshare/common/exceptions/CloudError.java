@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common.exceptions;
+package org.irmacard.keyshare.common.exceptions;
 
 /**
  * Errors that can occur in usage of the API, along with their HTTP status code

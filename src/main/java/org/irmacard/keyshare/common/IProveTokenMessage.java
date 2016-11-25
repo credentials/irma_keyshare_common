@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 public class IProveTokenMessage extends TokenMessage {
 	private String ip;

@@ -28,7 +28,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 import org.irmacard.api.common.IrmaQr;
 

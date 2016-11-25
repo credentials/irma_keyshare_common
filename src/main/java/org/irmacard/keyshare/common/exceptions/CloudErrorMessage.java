@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common.exceptions;
+package org.irmacard.keyshare.common.exceptions;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

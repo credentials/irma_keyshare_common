@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 public class IRMAHeaders {
 	public static final String USERNAME = "IRMA_Username";

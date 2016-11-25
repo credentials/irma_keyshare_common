@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'eclipse'
 
 version = '0.0.1'
-group = 'org.irmacard.cloud'
+group = 'org.irmacard.keyshare'
 
 targetCompatibility = "1.7"
 sourceCompatibility = "1.7"
