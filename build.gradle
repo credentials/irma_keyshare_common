@@ -27,6 +27,8 @@ artifacts {
 
 dependencies {
     testCompile "junit:junit:4.11"
+
+    compile 'org.irmacard.api:irma_api_common:0.7.0'
 }
 
 if ( project.hasProperty("mavenRepositoryIRMA") ) {
