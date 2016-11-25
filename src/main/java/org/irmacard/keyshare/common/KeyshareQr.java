@@ -32,17 +32,17 @@ package org.irmacard.keyshare.common;
 
 import org.irmacard.api.common.IrmaQr;
 
-public class CloudQR extends IrmaQr {
+public class KeyshareQr extends IrmaQr {
 	private String url;
 	private String v;
 	private String username;
 	private String userID;
 
-	public CloudQR() {
-		super("cloud");
+	public KeyshareQr() {
+		super("keyshare");
 	}
 
-	public CloudQR(String version, String url, String action, String username, String userID) {
+	public KeyshareQr(String version, String url, String action, String username, String userID) {
 		this();
 
 		this.v = version;
