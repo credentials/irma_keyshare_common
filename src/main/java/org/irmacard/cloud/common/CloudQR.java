@@ -30,19 +30,23 @@
 
 package org.irmacard.cloud.common;
 
-public class CloudQR {
+import org.irmacard.api.common.IrmaQr;
+
+public class CloudQR extends IrmaQr {
 	private String url;
 	private String v;
-	private String a;
 	private String username;
 	private String userID;
 
-	public CloudQR() {}
+	public CloudQR() {
+		super("cloud");
+	}
 
 	public CloudQR(String version, String url, String action, String username, String userID) {
-		v = version;
+		this();
+
+		this.v = version;
 		this.url = url;
-		a = action;
 		this.username = username;
 		this.userID = userID;
 	}
@@ -61,14 +65,6 @@ public class CloudQR {
 
 	public void setUrl(String u) {
 		this.url = u;
-	}
-
-	public String getAction() {
-		return a;
-	}
-
-	public void setAction(String action) {
-		this.a = action;
 	}
 
 	public String getUsername() {
