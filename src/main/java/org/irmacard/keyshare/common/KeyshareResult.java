@@ -1,6 +1,6 @@
 package org.irmacard.keyshare.common;
 
-public class CloudResult {
+public class KeyshareResult {
 	String status;
 	String message;
 
@@ -8,10 +8,10 @@ public class CloudResult {
 	public static final String STATUS_FAILURE = "failure";
 	public static final String STATUS_ERROR = "error";
 
-	public CloudResult() {
+	public KeyshareResult() {
 	}
 
-	public CloudResult(String status, String message) {
+	public KeyshareResult(String status, String message) {
 		this.status = status;
 		this.message = message;
 	}

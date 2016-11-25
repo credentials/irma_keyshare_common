@@ -1,7 +1,7 @@
-# IRMA Cloud common
+# IRMA keyshare common
 
 This library contains the java classes used in the communication protocol between the
-card emulator application and the IRMA cloud server.
+card emulator application and the IRMA keyshare server.
 
 ## Building using Gradle (recommended)
 

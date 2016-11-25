@@ -4,7 +4,7 @@ package org.irmacard.keyshare.common.exceptions;
  * Errors that can occur in usage of the API, along with their HTTP status code
  * and human-readable descriptions. For use in {@link ApiErrorMessage} and {@link ApiException}.
  */
-public enum CloudError {
+public enum KeyshareError {
 	// IdP-specific errors
 	// MALFORMED_ISSUER_REQUEST(400, "Malformed issuer request"),
 
@@ -28,7 +28,7 @@ public enum CloudError {
 	private int statusCode;
 	private String description;
 
-	CloudError(int statusCode, String description) {
+	KeyshareError(int statusCode, String description) {
 		this.statusCode = statusCode;
 		this.description = description;
 	}

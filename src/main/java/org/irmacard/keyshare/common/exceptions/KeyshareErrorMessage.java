@@ -7,8 +7,8 @@ import java.io.StringWriter;
  * An error message for clients of this server, meant for JSON (d)serialization of {@link ApiException}s
  * (although it can also hold other {@link Throwable}s).
  */
-public class CloudErrorMessage {
-	private CloudError error;
+public class KeyshareErrorMessage {
+	private KeyshareError error;
 	private int status;
 	private String description;
 	private String message;
@@ -18,12 +18,12 @@ public class CloudErrorMessage {
 	 * Construct a new error message.
 	 * @param ex cause of the problem
 	 */
-	public CloudErrorMessage(Throwable ex) {
-		if (ex instanceof CloudException) {
-			this.error = ((CloudException) ex).getError();
+	public KeyshareErrorMessage(Throwable ex) {
+		if (ex instanceof KeyshareException) {
+			this.error = ((KeyshareException) ex).getError();
 			this.message = ex.getMessage();
 		} else {
-			this.error = CloudError.EXCEPTION;
+			this.error = KeyshareError.EXCEPTION;
 			this.message = ex.toString(); // Include exception classname
 		}
 
@@ -33,7 +33,7 @@ public class CloudErrorMessage {
 	}
 
 	/** The error that occured. */
-	public CloudError getError() {
+	public KeyshareError getError() {
 		return error;
 	}
 
