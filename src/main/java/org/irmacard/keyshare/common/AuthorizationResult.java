@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 import java.util.Arrays;
 import java.util.List;

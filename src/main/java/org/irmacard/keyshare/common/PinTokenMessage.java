@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 public class PinTokenMessage extends TokenMessage {
 	private String pin;

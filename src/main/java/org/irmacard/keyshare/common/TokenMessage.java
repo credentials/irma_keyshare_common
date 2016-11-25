@@ -1,4 +1,4 @@
-package org.irmacard.cloud.common;
+package org.irmacard.keyshare.common;
 
 class TokenMessage {
 	private String id;
