@@ -1,9 +1,12 @@
 package org.irmacard.keyshare.common;
 
+import de.henku.jpaillier.PublicKey;
+
 public class UserLoginMessage {
 	private String username;
 	private String password;
 	private String pin;
+	private PublicKey publicKey;
 
 	public UserLoginMessage() {};
 
@@ -11,6 +14,13 @@ public class UserLoginMessage {
 		this.username = username;
 		this.password = password;
 		this.pin = pin;
+	}
+
+	public UserLoginMessage(String username, String password, String pin, PublicKey publicKey) {
+		this.username = username;
+		this.password = password;
+		this.pin = pin;
+		this.publicKey = publicKey;
 	}
 
 	public String getUsername() {
@@ -35,5 +45,13 @@ public class UserLoginMessage {
 
 	public String getPin() {
 		return pin;
+	}
+
+	public PublicKey getPublicKey() {
+		return publicKey;
+	}
+
+	public void setPublicKey(PublicKey publicKey) {
+		this.publicKey = publicKey;
 	}
 }
