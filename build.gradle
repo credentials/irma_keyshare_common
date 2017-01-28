@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
 
-version = '0.0.1'
+version = '0.0.2'
 group = 'org.irmacard.keyshare'
 
 targetCompatibility = "1.7"
@@ -28,7 +28,7 @@ artifacts {
 dependencies {
     testCompile "junit:junit:4.11"
 
-    compile 'org.irmacard.api:irma_api_common:0.7.0'
+    compile 'org.irmacard.api:irma_api_common:0.7.1'
 }
 
 if ( project.hasProperty("mavenRepositoryIRMA") ) {
