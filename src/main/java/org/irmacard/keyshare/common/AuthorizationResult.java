@@ -9,7 +9,6 @@ public class AuthorizationResult {
 
 	public static final String STATUS_AUTHORIZED = "authorized";
 	public static final String STATUS_EXPIRED = "expired";
-	public static final String STATUS_BLOCKED = "blocked";
 
 	public AuthorizationResult() {
 	}

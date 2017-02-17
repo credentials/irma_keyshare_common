@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * An error message for clients of this server, meant for JSON (d)serialization of {@link ApiException}s
+ * An error message for clients of this server, meant for JSON (d)serialization of {@link KeyshareException}s
  * (although it can also hold other {@link Throwable}s).
  */
 public class KeyshareErrorMessage {
