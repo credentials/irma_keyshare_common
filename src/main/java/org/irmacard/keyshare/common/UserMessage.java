@@ -6,14 +6,16 @@ public class UserMessage {
 		private String ID;
 		private boolean enrolled;
 		private boolean enabled;
+		private boolean emailIssued;
 
 		public UserMessage() {};
 
-		public UserMessage(String username, String sessionToken, String ID, boolean enrolled, boolean enabled) {
+		public UserMessage(String username, String sessionToken, String ID, boolean enrolled, boolean enabled, boolean emailIssued) {
 			this.username = username;
 			this.sessionToken = sessionToken;
 			this.ID = ID;
 			this.enrolled = enrolled;
+			this.emailIssued = emailIssued;
 			this.setEnabled(enabled);
 		}
 
@@ -55,5 +57,13 @@ public class UserMessage {
 
 		public void setEnabled(boolean enabled) {
 			this.enabled = enabled;
+		}
+
+		public boolean isEmailIssued() {
+			return emailIssued;
+		}
+
+		public void setEmailIssued(boolean emailIssued) {
+			this.emailIssued = emailIssued;
 		}
 }
